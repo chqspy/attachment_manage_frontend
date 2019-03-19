@@ -67,11 +67,10 @@
 
 UE.Editor.prototype._bkGetActionUrl = UE.Editor.prototype.getActionUrl;
     UE.Editor.prototype.getActionUrl = function (action) {
-		console.log(action)
         if (action == 'uploadimage' || action == 'uploadvideo'|| action == 'uploadfile'|| action == 'uploadfile') {
-            return 'http://localhost/attachment/upload';//此处写自定义的图片上传路径
+            return BASEURL+'/attachment/upload';//此处写自定义的图片上传路径
         }else if(action == 'uploadscrawl'){
-			return 'http://localhost/attachment/uploadScrawl';
+			return BASEURL+'/attachment/uploadScrawl';
 		}else {
             return this._bkGetActionUrl.call(this, action);
         }
