@@ -1,2 +1,0 @@
-# attachment_manage_frontend
-Ueditor前端
